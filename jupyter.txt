@@ -1,0 +1,2 @@
+conda activate YSIT2023
+jupyter notebook --notebook-dir="D:\JWorkspace\Python\AI\workspace\python_deep_learning_machie_learning_start"
