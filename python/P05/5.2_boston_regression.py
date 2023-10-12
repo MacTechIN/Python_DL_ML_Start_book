@@ -30,11 +30,18 @@ print("시드 고정: ", SEED)
 
 
 # skleran 데이터셋에서 보스턴 주택 데이터셋 로딩
-from sklearn import datasets
-housing = datasets.load_boston()
-X_data = housing.data
-y_data = housing.target
+#from sklearn import datasets
+#housing = datasets.load_boston()
+#X_data = housing.data
+#y_data = housing.target
+
+X_data = pd.read_csv("./boston_housing_data.csv")
+y_data = pd.read_csv( "./boston_housing_target.csv")
+
+
+
 print(X_data.shape, y_data.shape)
+
 
 
 # In[17]:

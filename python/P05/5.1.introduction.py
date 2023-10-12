@@ -7,6 +7,7 @@
 
 
 import tensorflow as tf
+
 print(tf.__version__)
 
 
@@ -54,7 +55,7 @@ model.compile(optimizer='adam', loss='mse', metrics=['mae'])
 # In[ ]:
 
 
-model.fit(X_train, y_train, epochs=3000, verbose=0)
+model.fit(X_train, y_train, epochs=5000, verbose=0)
 
 
 # In[ ]:
@@ -68,5 +69,5 @@ model.weights
 # In[ ]:
 
 
-model.predict([[11], [12], [13]])
+model.predict([[1], [22], [-2]])
 
